@@ -138,7 +138,7 @@
     <joint name = "caster_wheel1_joint" type = "fixed">
         <parent link = "chassis"/>
         <child link = "caster_wheel1"/>
-        <origin xyz = "0.25 0 -0.065"/>
+        <origin xyz = "0.25 0 -0.062"/>
     </joint>
 
     <link name = "caster_wheel1">
@@ -173,7 +173,7 @@
     <joint name = "caster_wheel2_joint" type = "fixed">
         <parent link = "chassis"/>
         <child link = "caster_wheel2"/>
-        <origin xyz = "-0.25 0 -0.065"/>
+        <origin xyz = "-0.25 0 -0.062"/>
     </joint>
 
     <link name = "caster_wheel2">
