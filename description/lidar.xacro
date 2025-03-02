@@ -3,11 +3,11 @@
 
     <joint name = "lidar_joint" type="fixed">
         <parent link = "chassis"/>
-        <child link = "lidar_frame"/>
+        <child link = "laser_frame"/>
         <origin xyz = "0 0 0.12" rpy = "0 0 0"/>
     </joint>
 
-    <link name = "lidar_frame">
+    <link name = "laser_frame">
         <visual>
             <geometry>
                 <cylinder radius = "0.04" length = "0.04"/>
@@ -26,7 +26,7 @@
 
 
     <!--GAZEBO STUFF-->
-    <gazebo reference="lidar_frame">
+    <gazebo reference="laser_frame">
         <material>Gazebo/Red</material>
         <sensor name="lidar" type="gpu_lidar">
             <pose> 0 0 0 0 0 0 </pose>
@@ -49,7 +49,7 @@
             <topic>scan</topic>
             <!--<output_type>sensor_msgs/LaserScan</output_type>-->
 
-            <gz_frame_id>lidar_frame</gz_frame_id>
+            <gz_frame_id>laser_frame</gz_frame_id>
 
         </sensor>
     </gazebo>
