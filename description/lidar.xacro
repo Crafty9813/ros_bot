@@ -47,7 +47,6 @@
             </lidar>
 
             <topic>scan</topic>
-            <!--<output_type>sensor_msgs/LaserScan</output_type>-->
 
             <gz_frame_id>lidar_frame</gz_frame_id>
 
